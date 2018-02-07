@@ -32,7 +32,11 @@ def main():
     paddleA_width = 25
     paddleA_heigh = 100
 
-    
+    paddleB_xaxis_position = (screen_width - 35)
+    paddleB_yaxis_position = 10
+    paddleB_width = 25
+    paddleB_heigh = 100
+
 
 
 
