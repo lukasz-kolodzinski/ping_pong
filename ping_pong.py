@@ -11,7 +11,7 @@ orange = (218, 176, 39)
 white = (255, 255, 255)
 black = (0, 0, 0)
 
-def main():
+def game_ui():
     screen_width = 600
     screen_lengh = 400
     screen_area = pygame.display.set_mode((screen_width, screen_lengh))
@@ -40,6 +40,11 @@ def main():
     first_player_score = 0
     second_player_score = 0
 
-
+def main():
+    program_run = True
+    pygame.mouse.set_visible(False)
+    while program_run is True:
+        game_ui()
+        
 
 
