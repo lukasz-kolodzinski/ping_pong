@@ -9,7 +9,7 @@ red = (255, 0, 0)
 green = (0, 255, 0)
 orange = (218, 176, 39)
 white = (255, 255, 255)
-black = (0, 0. 0)
+black = (0, 0, 0)
 
 def main():
     screen_width = 600
@@ -36,6 +36,9 @@ def main():
     paddleB_yaxis_position = 10
     paddleB_width = 25
     paddleB_heigh = 100
+
+    first_player_score = 0
+    second_player_score = 0
 
 
 
