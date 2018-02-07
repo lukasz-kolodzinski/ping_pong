@@ -27,6 +27,12 @@ def main():
     ball_y_move = 3
     ball_size = 25
 
+    paddleA_xaxis_position = 10
+    paddleA_yaxis_position = 10
+    paddleA_width = 25
+    paddleA_heigh = 100
+
+    
 
 
 
