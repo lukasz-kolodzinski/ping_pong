@@ -47,7 +47,10 @@ def main():
     while program_run is True:
         pressed_button = pygame.key.get_pressed()
         pygame.key.set_repeat()
-        
+        for event in pygame.event.get():
+            if pygame.type == pygame.QUIT:
+                program_run = False
+
 
 
 
