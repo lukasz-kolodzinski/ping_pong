@@ -42,9 +42,13 @@ def game_ui():
 
 def main():
     program_run = True
+    game_ui()
     pygame.mouse.set_visible(False)
     while program_run is True:
-        game_ui()
+        pressed_button = pygame.key.get_pressed()
+        pygame.key.set_repeat()
         
+
+
 
 
