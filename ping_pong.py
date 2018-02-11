@@ -60,7 +60,19 @@ while program_run is True:
 
 ball_x_axis += ball_x_move
 ball_y_axis += ball_y_move
+# Cushion colision detection
+if ball_y_axis - ball_size <= 0 or ball_y_axis + ball_size >= screen_lengh:
+    ball_y_move *= -1
 
+if paddleA_yaxis_position < 0:
+    paddleA_yaxis_position = 0
+elif paddleA_yaxis_position + paddleA_heigh > screen_lengh:
+    paddleA_yaxis_position = screen_lengh - paddleA_heigh
 
+if paddleB_yaxis_position < 0:
+    paddleB_yaxis_position = 0
+elif paddleB_yaxis_position + paddleB_heigh > screen_lengh:
+    paddleB_yaxis_position = screen_lengh - paddleB_heigh
+    
 
 
