@@ -58,6 +58,8 @@ while program_run is True:
     if pressed_button [pygame.K_DOWN]:
         paddleB_yaxis_position += 5
 
+ball_x_axis += ball_x_move
+ball_y_axis += ball_y_move
 
 
 
