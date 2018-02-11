@@ -87,7 +87,11 @@ if ball_x_axis <= 0:
     second_player_score += 1
     ball_x_axis = int(screen_width /2)
     ball_y_axis = int(screen_lengh /2)
-    
+elif ball_y_axis >= screen_width:
+    first_player_score +=1
+    ball_x_axis = int(screen_width /2)
+    ball_y_axis = int(screen_lengh /2)
+
 
 
 
