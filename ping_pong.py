@@ -99,6 +99,10 @@ paddleB = pygame.draw.rect(screen_area,red,(paddleB_xaxis_position,paddleB_yaxis
 net = pygame.draw.line(screen_area,black,(300,5),(300,400))
 ball = pygame.draw.circle(screen_area,orange,(ball_x_axis,ball_y_axis),ball_size,0)
 
+#score display
+score = font.render(str(first_player_score) + " " + str(second_player_score), 1, white)
+screen_area.blit(score, (screen_width /2 - score.get_width() /2, 10))
+
 
 
 
