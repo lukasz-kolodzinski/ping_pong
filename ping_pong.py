@@ -82,7 +82,12 @@ if ball_x_axis < paddleA_xaxis_position + paddleA_width and ball_y_axis >= paddl
 if ball_x_axis > paddleB_xaxis_position and ball_y_axis >= paddleB_yaxis_position and ball_y_axis <= paddleB_yaxis_position + paddleB_heigh:
     ball_x_move *= -1
 
-
+#determine when player2 scores
+if ball_x_axis <= 0:
+    second_player_score += 1
+    ball_x_axis = int(screen_width /2)
+    ball_y_axis = int(screen_lengh /2)
+    
 
 
 
