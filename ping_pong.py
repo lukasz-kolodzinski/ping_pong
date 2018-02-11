@@ -73,6 +73,13 @@ if paddleB_yaxis_position < 0:
     paddleB_yaxis_position = 0
 elif paddleB_yaxis_position + paddleB_heigh > screen_lengh:
     paddleB_yaxis_position = screen_lengh - paddleB_heigh
-    
+
+#left paddle ball collision
+if ball_x_axis < paddleA_xaxis_position + paddleA_width and ball_y_axis >= paddleA_yaxis_position and ball_y_axis <= paddleA_yaxis_position + paddleA_heigh:
+    ball_x_move *= -1
+
+
+
+
 
 
