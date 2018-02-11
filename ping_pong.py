@@ -92,6 +92,13 @@ elif ball_y_axis >= screen_width:
     ball_x_axis = int(screen_width /2)
     ball_y_axis = int(screen_lengh /2)
 
+#graphical content
+screen_area.fill(green)
+paddleA = pygame.draw.rect(screen_area,red,(paddleA_xaxis_position, paddleA_yaxis_position, paddleA_heigh, paddleA_width), 0)
+paddleB = pygame.draw.rect(screen_area,red,(paddleB_xaxis_position,paddleB_yaxis_position,paddleB_heigh,paddleB_width),0)
+net = pygame.draw.line(screen_area,black,(300,5),(300,400))
+ball = pygame.draw.circle(screen_area,orange,(ball_x_axis,ball_y_axis),ball_size,0)
+
 
 
 
